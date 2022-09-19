@@ -35,7 +35,7 @@
         }
 
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
             url(../tca/images/aboutuscover.png);
             background-position: center;
             background-repeat: no-repeat;
@@ -44,6 +44,9 @@
             width: 100%;
         }
 
+        .heroTitle {
+            color: white;
+        }
         
         .content-border {
           border: solid transparent ;
@@ -62,8 +65,8 @@
         margin-bottom: 25px;
       }
       
-      .container-fluid h3 {
-        font-family: 'Coolvetica';
+      .content h1, .content h3 {
+        font-family: 'Sukhumvit';
         font-size: 2rem;
         color: #c64931;
       }
@@ -81,7 +84,7 @@
       }
 
       .ourLogo {
-        font-family: 'Coolvetica';
+        font-family: 'Sukhumvit';
         color: white;
         margin-bottom: 30px;
       }
@@ -136,8 +139,8 @@
                         <!-- Hero -->
             <div class="p-5 text-center bg-image rounded-3 hero";>
             <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <h1 class="mb-3 heroText">About Us</h1>
+              <div class="text-white heroTitle">
+                <h1 class="mb-3 heroText">ABOUT US</h1>
               </div>
             </div>
             </div>
@@ -147,23 +150,23 @@
 
 <!--Logo -->
             <figure class="text-center">
-              <h1 class="ourLogo">Our Logo</h1>
-                <img src="../tca/images/TCALogowbg.png" class="img-fluid companyLogo" alt="...">
+              <h1 class= "text-center ourLogo">OUR LOGO</h1>
+                <img src="../tca/images/TCALogowbg2.png" class="img-fluid companyLogo" alt="...">
 
 
 <!-- Content-->
             <div class="container-fluid content ">
-              <div class="content-border">
+              <div class="flex-sm-nowrap content-border">
                 <br><br>
-                <h3 class="d-print-none">WHO WE ARE</h3>
-                  <div class="d-print-none contentText">
+                <h3 class="d-flex bd-highlight justify-content-center">WHO WE ARE</h3>
+                  <div class="p-2-flex flex-nowrap contentText">
                     we are a community-motivated business that brings prime meats from 
                     all over the globe and worldly meat-eaters from the metro south 
                     into one place-- into one alley.
                   </div>
                   <br>
-                  <h3 class="d-print-none">WHAT WE DO</h3>
-                  <div class="d-print-none contentText">
+                  <h3 class="d-flex bd-highlight justify-content-center">WHAT WE DO</h3>
+                  <div class="p-2-flex flex-nowrap contentText">
                     we want to deliver the experience of enjoying quality meats without 
                     the hassle of driving through hours and hours of manila traffic just to 
                     pay too much for an ant-sized meat portion. we can make you skip all 
