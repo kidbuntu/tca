@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'Coolvetica';
+src: url(../Fonts/coolvetica\ rg.otf);
+
+}
+
+@font-face {
+  font-family: 'SukhumvitSet';
+src: url(../Fonts/SukhumvitSet-SemiBold.ttf);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1  {
+    font-family: 'Coolvetica';
+    font-size: 50px;
+    line-height: 64px;
+    color: #000
+}
+
+h2  {
+    font-family: 'Coolvetica';
+    font-size: 12px;
+    line-height: 48px;
+    color: #000;
+}
+
+h4  {
+    font-family: 'Coolvetica';
+    font-size: 20px;
+    color: #000
+
+}
+
+h6  {
+    font-family: 'Coolvetica';
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p  {
+    font-family: 'SukhumvitSet';
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100% ;
+    margin: 0 ;
+}
+
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: #a6432c ;
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.logo {
+    
+    position: absolute;
+    margin-right: 30px;
+    left: 15pt;
+    top: 9pt;
+    height: 300px;
+}
+
+#header{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 70px;
+    height: 200px;
+    background-color: #e1dfdb;
+    opacity: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  margin-top: 5rem;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.35s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #c64931 ;
+}
+
+#navbar li a.active::after, #navbar li a:hover::after { 
+  content: "";
+  width: 35px;
+  height: 0;
+  background: #c64931;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transition: 0.35s;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+  , url("../Images/HeroImage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  height: 80%;
+}
+
+.inner-container {
+  position: absolute;
+  width: 100%;
+  color: white;
+  height: auto;
+  margin-top: 200px;
+  
+}
+
+.inner-container h1, h2 {
+  font-family: 'Coolvetica';
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.highlightword1 {
+  color: #c64931;
+  font-style: bold;
+  font-size: 5rem;
+}
+
+.highlightword2 {
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.highlightword3 {
+  color: #c64931;
+}
+
+.recommendations {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+
+}
+
+#bestseller-title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bestseller-container1 {
+  display: inline-block;
+  border-width: 30%;
+  width: 30%;
+  border: solid black;
+  text-align: center;
+}
+
+.bestseller-container2 {
+  display: inline-block;
+  border-width: 30%;
+  width: 30%;
+  border: solid black;
+  text-align: center;
+
+}
+.bestseller-container3 {
+  display: inline-block;
+  border-width: 30%;
+  width: 30%;
+  border: solid black;
+  text-align: center;
+}
+
+
+
+.btn {
+  border-radius: 20px;
+  width: 100px;
+  height: 30px ;
+  margin-left: 1em;
+}
+
+.reviews {
+  
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.reviews-container {
+  background-color: #e1dfdb;
+  border-radius: 21px;
+  width: 1200px;
+  height: 600px;
+}
+
+.reviews-container h2, .reviews-container p {
+  margin-top: 2rem;
+}
+
+.reviews-container h2 {
+  color: #000;
+}
+
+.reviews-container p {
+  text-align: center;
+}
+
+.titledetail {
+  font-size: 20px;
+}
+
+.carousel-inner {
+  display: flexbox;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.reviewContent1 {
+  justify-items: center;
+  display: flex ;
+}
