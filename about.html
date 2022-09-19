@@ -30,6 +30,7 @@
         
         body {
             background-color: #c64931;
+            height: auto;
             
         }
 
@@ -43,37 +44,54 @@
             width: 100%;
         }
 
-  
-
-       .content-border {
-        border: solid transparent ;
-        background-color: #e1dfdb;
-        border-radius: 18px;
-        width: 80%;
-        margin: auto;
-        margin-top: 30px ;
-       }
-
+        
+        .content-border {
+          border: solid transparent ;
+          background-color: #e1dfdb;
+          border-radius: 18px;
+          width: 80%;
+          margin: auto;
+          margin-top: 30px ;
+          height: 85% ;
+        }
+        
        .container-fluid { 
         text-align: center;
-        height: 100%;
-       }
-       
-       .container-fluid h3 {
+        height: 80%;
+        padding: auto;
+        margin-bottom: 25px;
+      }
+      
+      .container-fluid h3 {
         font-family: 'Coolvetica';
         font-size: 2rem;
         color: #c64931;
-       }
+      }
        
-       .container-fluid p { 
+      .contentText { 
         font-family: 'SukhumvitThin';
         font-size: medium;
         width: 50%;
         margin: auto;
-       }
+      }
+      
+      
+      .heroText  {
+        font-family: 'Coolvetica';
+      }
+
+      .ourLogo {
+        font-family: 'Coolvetica';
+        color: white;
+        margin-bottom: 30px;
+      }
       
        .companyLogo {
-        border-radius: px;
+        border-radius: 18px;
+       }
+
+       .highlightWord {
+        color: #c64931;
        }
 
     </style>
@@ -128,29 +146,31 @@
 <br>
 
 <!--Logo -->
-              <img src="../tca/images/TCALogowbg.png" class="rounded mx-auto d-block companyLogo" alt="...">
+            <figure class="text-center">
+              <h1 class="ourLogo">Our Logo</h1>
+                <img src="../tca/images/TCALogowbg.png" class="img-fluid companyLogo" alt="...">
 
 
 <!-- Content-->
             <div class="container-fluid content ">
               <div class="content-border">
                 <br><br>
-                <h3>WHO WE ARE</h3>
-                  <p class="lead">
+                <h3 class="d-print-none">WHO WE ARE</h3>
+                  <div class="d-print-none contentText">
                     we are a community-motivated business that brings prime meats from 
                     all over the globe and worldly meat-eaters from the metro south 
                     into one place-- into one alley.
-                  </p>
+                  </div>
                   <br>
-                  <h3>WHAT WE DO</h3>
-                  <p class="lead">
+                  <h3 class="d-print-none">WHAT WE DO</h3>
+                  <div class="d-print-none contentText">
                     we want to deliver the experience of enjoying quality meats without 
                     the hassle of driving through hours and hours of manila traffic just to 
                     pay too much for an ant-sized meat portion. we can make you skip all 
                     of that. we are committed to bringing the taste of your favorite foreign 
                     flavors right at your doorstep, so you can easily make unforgettable 
                     mealtime moments within the intimacy of your dining table.
-                  </p>
+                  </div>
                   <br><br>
               </div>
             </div>
@@ -198,8 +218,8 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
+          <h6 class="text-lowercase fw-semi-bold mb-2">
+            the <span class="highlightWord">carne</span > alley
           </h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -208,32 +228,13 @@
         </div>
         <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
+       
 
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+          <h6 class="text-lowercase fw-bold mb-4">
+            <span class="highlightWord">Useful</span> links
           </h6>
           <p>
             <a href="#!" class="text-reset">Pricing</a>
@@ -251,10 +252,10 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <h6 class="text-lowercase fw-bold mb-4"><span class="highlightWord">Contact</span></h6>
+          <p><i class="fas fa-home me-3"></i> Blk 12 Lot 40, San Pedro, Laguna, 4023</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
             info@example.com
@@ -271,8 +272,8 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    © 2022 Copyright: The <span class="highlightWord">Carne</span > Alley
+    
   </div>
   <!-- Copyright -->
 </footer>
